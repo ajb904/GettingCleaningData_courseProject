@@ -1,0 +1,30 @@
+This script loads raw Samsung accelerometer data from both training and test sets from files X_test.txt and X_train.txt, and combined with activity and subject labels found in y_test.txt/y_train.txt and subject_test.txt/subject_train.txt files, respectively.
+
+The two datasets were combined into one, and variables labelled using information provided in features.txt.
+
+Columns representing the mean or standard deviation of each measurement were extracted from the larger dataset. Finally, the data were summarised by calculating the mean of each variable per subject and per activity.
+
+The summarised dataset was saved as UCI_HAR_DATA_cleaned.txt.
+
+--------------------------------
+Variable names in final dataset:
+--------------------------------
+ActivityLabel: Activity measured
+Subject: Subject ID
+Time_BodyAcceleration-mean-[XYZ], Time_BodyAcceleration-std-[XYZ]: mean and stdev of body accelerometer measurement in X, Y or Z direction
+Time_GravityAcceleration-mean-X, Time_GravityAcceleration-std-X: mean and stdev of gravity accelerometer measurement in X, Y or Z direction
+Time_BodyAccelerationJerk-mean-[XYZ], Time_BodyAccelerationJerk-std-[XYZ]: mean and stdev of body jerk measurement in X, Y or Z direction
+Time_BodyAngularMomentum-mean-[XYZ], Time_BodyAngularMomentum-std-[XYZ]: mean and stdev of body angular momentum measurement in X, Y or Z direction
+Time_BodyAngularMomentumJerk-mean-[XYZ], Time_BodyAngularMomentumJerk-std-[XYZ]: mean and stdev of body angular momentum jerk measurement in X, Y or Z direction
+Time_BodyAccelerationMagnitude-mean, Time_BodyAccelerationMagnitude-std: mean and stdev of Euclidean distance of body acceleration measurement
+Time_GravityAccelerationMagnitude-mean, Time_GravityAccelerationMagnitude-std: mean and stdev of Euclidean distance of gravity acceleration measurement
+Time_BodyAccelerationJerkMagnitude-mean, Time_BodyAccelerationJerkMagnitude-std: mean and stdev of Euclidean distance of body jerk measurement
+Time_BodyAngularMomentumMagnitude-mean, Time_BodyAngularMomentumMagnitude-std: mean and stdev of body angular momentum magnitude
+Time_BodyAngularMomentumJerkMagnitude-mean, Time_BodyAngularMomentumJerkMagnitude-std: mean and stdev of body angular momentum jerk magnitude
+Freq_BodyAcceleration-mean-[XYZ], Freq_BodyAcceleration-std-[XYZ]: mean and stdev of body accelerometer measurement in X, Y or Z direction, transformed to frequency domain by FFT
+Freq_BodyAccelerationJerk-mean-[XYZ], Freq_BodyAccelerationJerk-std-[XYZ]: mean and stdev of body jerk measurement in X, Y or Z direction, transformed to frequency domain by FFT
+Freq_BodyAngularMomentum-mean-[XYZ], Freq_BodyAngularMomentum-std-[XYZ]: mean and stdev of body angular momentum measurement in X, Y or Z direction, transformed to frequency domain by FFT
+Freq_BodyAccelerationMagnitude-mean, Freq_BodyAccelerationMagnitude-std: mean and stdev of body accelerometer measurement magnitude, transformed to frequency domain by FFT
+Freq_BodyAccelerationJerkMagnitude-mean, Freq_BodyAccelerationJerkMagnitude-std: mean and stdev of body jerk measurement magnitude, transformed to frequency domain by FFT
+Freq_BodyAngularMomentumMagnitude-mean, Freq_BodyAngularMomentumMagnitude-std: mean and stdev of body angular momentum measurement magnitude, transformed to frequency domain by FFT
+Freq_BodyAngularMomentumJerkMagnitude-mean, Freq_BodyAngularMomentumJerkMagnitude-std: mean and stdev of body angular momentum jerk magnitude, transformed to frequency domain by FFT
