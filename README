@@ -1,3 +1,4 @@
+##Description
 This script loads raw Samsung accelerometer data from both training and test sets from files X_test.txt and X_train.txt, and combined with activity and subject labels found in y_test.txt/y_train.txt and subject_test.txt/subject_train.txt files, respectively.
 
 The two datasets were combined into one, and variables labelled using information provided in features.txt.
@@ -7,7 +8,7 @@ Columns representing the mean or standard deviation of each measurement were ext
 The summarised dataset was saved as UCI_HAR_DATA_cleaned.txt.
 
 --------------------------------
-Variable names in final dataset:
+##Variable names in final dataset:
 --------------------------------
 ActivityLabel: Activity measured
 Subject: Subject ID
